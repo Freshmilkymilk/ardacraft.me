@@ -1,18 +1,9 @@
-sudo: required
-services:
-  - docker
+language: node_js
+  - "lts/*"
 
-env:
-  COMPOSE_VERSION: 3.7
+cache:
+  directories:
+    - webapp/node_modules
 
-before_install:
-  - curl -L https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
-  - chmod +x docker-compose
-  - sudo mv docker-compose /usr/local/bin
-
-script:
-  - docker-compose build
-  - docker-compose up
-
-notifications:
-  email: false
+install:
+  - npm install --prefix client
