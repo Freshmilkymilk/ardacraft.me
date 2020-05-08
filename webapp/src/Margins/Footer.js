@@ -81,22 +81,22 @@ export function Footer() {
                     </Typography>
                     <ul>
                         <li>
-                            <Link href="/" variant="subtitle1" color="textSecondary">
+                            <Link href="/modpack" variant="subtitle1" color="textSecondary">
                                 Modpack
                             </Link>
                         </li>
                         <li>
-                            <Link href="/modpack" variant="subtitle1" color="textSecondary">
+                            <Link href="/map" variant="subtitle1" color="textSecondary">
                                 Map
                             </Link>
                         </li>
                         <li>
-                            <Link href="/map" variant="subtitle1" color="textSecondary">
+                            <Link href="/about" variant="subtitle1" color="textSecondary">
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link href="/about" variant="subtitle1" color="textSecondary">
+                            <Link href="/faw" variant="subtitle1" color="textSecondary">
                                 FAQ
                             </Link>
                         </li>
