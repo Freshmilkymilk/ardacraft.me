@@ -6,6 +6,10 @@
 *.test
 *.out
 
+# Intellij
+.idea/
+*.iml
+
 webapp/node_modules
 webapp/build
 webapp/npm-debug.log*

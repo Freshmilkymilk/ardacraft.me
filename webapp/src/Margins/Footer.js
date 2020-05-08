@@ -29,30 +29,6 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-
-const footers = [
-    {
-        title: 'ArdaCraft',
-        description: ['Home', 'Forums', 'Wiki', 'Discord'],
-        links: ['/', 'https://forums.ardacraft.me/', 'https://wiki.ardacaft.me/', 'https://discord.gg/fykFabG'],
-    },
-    {
-        title: 'Links',
-        description: ['Modpack', 'Map', 'About', 'FAQ'],
-        links: [],
-    },
-    {
-        title: 'Social',
-        description: ['Twitter', 'Instagram', 'Youtube', 'Reddit', 'Planet Minecraft', 'Github', 'Patreon'],
-        links: [],
-    },
-    {
-        title: 'Legal',
-        description: ['Privacy policy', 'Rules'],
-        links: [],
-    },
-];
-
 function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
@@ -69,28 +45,132 @@ function Copyright() {
 export function Footer() {
     const classes = useStyles();
 
-    return(
+    return (
         <Container maxWidth="md" component="footer" className={classes.footer}>
             <Grid container spacing={4} justify="space-evenly">
-                {footers.map((footer) => (
-                    <Grid item xs={6} sm={3} key={footer.title}>
-                        <Typography variant="h6" color="textPrimary" gutterBottom>
-                            {footer.title}
-                        </Typography>
-                        <ul>
-                            {footer.description.map((item) => (
-                                <li key={item}>
-                                    <Link href="#" variant="subtitle1" color="textSecondary">
-                                        {item}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </Grid>
-                ))}
+                <Grid item xs={6} sm={3}>
+                    <Typography variant="h6" color="textPrimary" gutterBottom>
+                        ArdaCraft
+                    </Typography>
+                    <ul>
+                        <li>
+                            <Link href="/" variant="subtitle1" color="textSecondary">
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://forums.ardacraft.me" variant="subtitle1" color="textSecondary">
+                                Forums
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://wiki.ardacraft.me" variant="subtitle1" color="textSecondary">
+                                Wiki
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://discord.gg/fykFabG" variant="subtitle1" color="textSecondary">
+                                Discord
+                            </Link>
+                        </li>
+                    </ul>
+                </Grid>
+                <Grid item xs={6} sm={3}>
+                    <Typography variant="h6" color="textPrimary" gutterBottom>
+                        Links
+                    </Typography>
+                    <ul>
+                        <li>
+                            <Link href="/" variant="subtitle1" color="textSecondary">
+                                Modpack
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/modpack" variant="subtitle1" color="textSecondary">
+                                Map
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/map" variant="subtitle1" color="textSecondary">
+                                About
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/about" variant="subtitle1" color="textSecondary">
+                                FAQ
+                            </Link>
+                        </li>
+                    </ul>
+                </Grid>
+                <Grid item xs={6} sm={3}>
+                    <Typography variant="h6" color="textPrimary" gutterBottom>
+                        Social
+                    </Typography>
+                    <ul>
+                        <li>
+                            <Link href="https://twitter.com/ArdaCraft/" target="_blank" variant="subtitle1"
+                                  color="textSecondary">
+                                Twitter
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://instagram.com/ardacraft/" target="_blank" variant="subtitle1"
+                                  color="textSecondary">
+                                Instagram
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://youtube.com/c/ardacraftmc/" target="_blank" variant="subtitle1"
+                                  color="textSecondary">
+                                YouTube
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://reddit.com/r/ardacraft/" target="_blank" variant="subtitle1"
+                                  color="textSecondary">
+                                Reddit
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://planetminecraft.com/server/ardacraft-3119330/" target="_blank"
+                                  variant="subtitle1" color="textSecondary">
+                                Planet Minecraft
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://github.com/ardacraft/" target="_blank" variant="subtitle1"
+                                  color="textSecondary">
+                                GitHub
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://patreon.com/ardacraft/" target="_blank" variant="subtitle1"
+                                  color="textSecondary">
+                                Patreon
+                            </Link>
+                        </li>
+                    </ul>
+                </Grid>
+                <Grid item xs={6} sm={3}>
+                    <Typography variant="h6" color="textPrimary" gutterBottom>
+                        Legal
+                    </Typography>
+                    <ul>
+                        <li>
+                            <Link href="/privacy" variant="subtitle1" color="textSecondary">
+                                Privacy Policy
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/rules" variant="subtitle1" color="textSecondary">
+                                Rules
+                            </Link>
+                        </li>
+                    </ul>
+                </Grid>
             </Grid>
             <Box mt={5}>
-                <Copyright />
+                <Copyright/>
             </Box>
         </Container>
     );
