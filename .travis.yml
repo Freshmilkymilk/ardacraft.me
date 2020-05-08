@@ -1,9 +1,0 @@
-language: node_js
-  - "lts/*"
-
-cache:
-  directories:
-    - webapp/node_modules
-
-install:
-  - npm install --prefix webapp
