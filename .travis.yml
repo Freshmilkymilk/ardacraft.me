@@ -6,4 +6,4 @@ cache:
     - webapp/node_modules
 
 install:
-  - npm install --prefix client
+  - npm install --prefix webapp
