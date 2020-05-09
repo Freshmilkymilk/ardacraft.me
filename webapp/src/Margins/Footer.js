@@ -3,6 +3,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
+import {Link as Page} from "react-router-dom";
 import Box from "@material-ui/core/Box";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
@@ -54,7 +55,7 @@ export function Footer() {
                     </Typography>
                     <ul>
                         <li>
-                            <Link href="/" variant="subtitle1" color="textSecondary">
+                            <Link variant="subtitle1" color="textSecondary" component={Page} to={'/'}>
                                 Home
                             </Link>
                         </li>
@@ -81,22 +82,22 @@ export function Footer() {
                     </Typography>
                     <ul>
                         <li>
-                            <Link href="../modpack" variant="subtitle1" color="textSecondary">
+                            <Link variant="subtitle1" color="textSecondary" component={Page} to={'/modpack'}>
                                 Modpack
                             </Link>
                         </li>
                         <li>
-                            <Link href="../map" variant="subtitle1" color="textSecondary">
+                            <Link variant="subtitle1" color="textSecondary" component={Page} to={'/map'}>
                                 Map
                             </Link>
                         </li>
                         <li>
-                            <Link href="../about" variant="subtitle1" color="textSecondary">
+                            <Link variant="subtitle1" color="textSecondary" component={Page} to={'/about'}>
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link href="../faq" variant="subtitle1" color="textSecondary">
+                            <Link variant="subtitle1" color="textSecondary" component={Page} to={'/faq'}>
                                 FAQ
                             </Link>
                         </li>
@@ -157,12 +158,12 @@ export function Footer() {
                     </Typography>
                     <ul>
                         <li>
-                            <Link href="../privacy" variant="subtitle1" color="textSecondary">
+                            <Link variant="subtitle1" color="textSecondary" component={Page} to={'/privacy'}>
                                 Privacy Policy
                             </Link>
                         </li>
                         <li>
-                            <Link href="../rules" variant="subtitle1" color="textSecondary">
+                            <Link variant="subtitle1" color="textSecondary" component={Page} to={'/rules'}>
                                 Rules
                             </Link>
                         </li>

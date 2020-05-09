@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Header} from "./Margins/Header";
 import {Footer} from "./Margins/Footer";
-import {BrowserRouter} from "react-router-dom";
-import {Route, Switch} from "react-router";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import './App.css';
 
@@ -14,24 +13,22 @@ import FAQ from "./Pages/FAQ";
 import Privacy from "./Pages/Privacy";
 import Rules from "./Pages/Rules";
 
-export class App extends Component {
-    render() {
-        return (
-            <BrowserRouter>
-                <div>
-                    <Header/>
-                    <Switch>
-                        <Route path="/" component={Home} exact/>
-                        <Route path="/modpack" component={Modpack} exact/>
-                        <Route path="/map" component={Map} exact/>
-                        <Route path="/about" component={About} exact/>
-                        <Route path="/faq" component={FAQ} exact/>
-                        <Route path="/privacy" component={Privacy} exact/>
-                        <Route path="/rules" component={Rules} exact/>
-                    </Switch>
-                    <Footer/>
-                </div>
-            </BrowserRouter>
-        );
-    }
+export default function App() {
+    return (
+        <Router>
+            <div>
+                <Header/>
+                <Switch>
+                    <Route exact path="/modpack" component={Modpack}/>
+                    <Route exact path="/map" component={Map}/>
+                    <Route exact path="/about" component={About}/>
+                    <Route exact path="/faq" component={FAQ}/>
+                    <Route exact path="/privacy" component={Privacy}/>
+                    <Route exact path="/rules" component={Rules}/>
+                    <Route exact path="/" component={Home}/>
+                </Switch>
+                <Footer/>
+            </div>
+        </Router>
+    );
 }
