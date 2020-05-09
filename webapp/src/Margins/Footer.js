@@ -81,22 +81,22 @@ export function Footer() {
                     </Typography>
                     <ul>
                         <li>
-                            <Link href="/modpack" variant="subtitle1" color="textSecondary">
+                            <Link href="../modpack" variant="subtitle1" color="textSecondary">
                                 Modpack
                             </Link>
                         </li>
                         <li>
-                            <Link href="/map" variant="subtitle1" color="textSecondary">
+                            <Link href="../map" variant="subtitle1" color="textSecondary">
                                 Map
                             </Link>
                         </li>
                         <li>
-                            <Link href="/about" variant="subtitle1" color="textSecondary">
+                            <Link href="../about" variant="subtitle1" color="textSecondary">
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link href="/faw" variant="subtitle1" color="textSecondary">
+                            <Link href="../faq" variant="subtitle1" color="textSecondary">
                                 FAQ
                             </Link>
                         </li>
@@ -157,12 +157,12 @@ export function Footer() {
                     </Typography>
                     <ul>
                         <li>
-                            <Link href="/privacy" variant="subtitle1" color="textSecondary">
+                            <Link href="../privacy" variant="subtitle1" color="textSecondary">
                                 Privacy Policy
                             </Link>
                         </li>
                         <li>
-                            <Link href="/rules" variant="subtitle1" color="textSecondary">
+                            <Link href="../rules" variant="subtitle1" color="textSecondary">
                                 Rules
                             </Link>
                         </li>
