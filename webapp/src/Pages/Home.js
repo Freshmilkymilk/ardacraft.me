@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import '../App.css';
 import Paper from "@material-ui/core/Paper";
+
+import '../App.css';
 
 export default class Home extends Component {
     render() {
@@ -21,7 +22,8 @@ export default class Home extends Component {
             paperContainer: {
                 height: 1080,
                 backgroundImage: `url(${"https://i.imgur.com/BXphPfC.jpg"})`,
-                backgroundSize: 'cover'
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
             }
         };
 

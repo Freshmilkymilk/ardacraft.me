@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {Header} from "./Margins/Header";
 import {Footer} from "./Margins/Footer";
-import {Route, BrowserRouter, Switch} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
+import {Route, Switch} from "react-router";
 
 import './App.css';
 
