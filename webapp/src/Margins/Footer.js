@@ -109,7 +109,7 @@ export function Footer() {
                     </Typography>
                     <ul>
                         <li>
-                            <Link href="https://twitter.com/ArdaCraft/" target="_blank" variant="subtitle1"
+                            <Link href="https://twitter.com/ArdaCraft_/" target="_blank" variant="subtitle1"
                                   color="textSecondary">
                                 Twitter
                             </Link>

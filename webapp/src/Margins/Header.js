@@ -9,13 +9,15 @@ import InputBase from '@material-ui/core/InputBase';
 import {fade, makeStyles} from '@material-ui/core/styles';
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 
+import {Link} from "react-router-dom";
+
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import ListSubheader from "@material-ui/core/ListSubheader";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -129,6 +131,10 @@ export function SideDrawer() {
         setState({...state, [anchor]: open});
     };
 
+    function ListItemLink(props) {
+        return <ListItem button component="a" {...props} />
+    }
+
     const list = (anchor) => (
         <div
             className={clsx(classes.list, {
@@ -139,41 +145,72 @@ export function SideDrawer() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                <ListItem button>
-                    <ListItemIcon></ListItemIcon>
+                <ListSubheader componenet={"div"}>
+                    ArdaCraft
+                </ListSubheader>
+                <ListItem button component={Link} to={"/"}>
                     <ListItemText primary={"Home"}/>
                 </ListItem>
-                <ListItem button>
-                    <ListItemIcon></ListItemIcon>
+                <ListItemLink href="https://forums.ardacraft.me/">
                     <ListItemText primary={"Forums"}/>
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon></ListItemIcon>
+                </ListItemLink>
+                <ListItemLink href="https://wiki.ardacraft.me/">
                     <ListItemText primary={"Wiki"}/>
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon></ListItemIcon>
+                </ListItemLink>
+                <ListItemLink href="https://discord.gg/fykFabG" target={"_blank"}>
                     <ListItemText primary={"Discord"}/>
+                </ListItemLink>
+            </List>
+            <Divider/>
+            <List>
+                <ListSubheader component={"div"}>
+                    Website Pages
+                </ListSubheader>
+                <ListItem button component={Link} to={"/modpack"}>
+                    <ListItemText primary={"Modpack"}/>
+                </ListItem>
+                <ListItem button component={Link} to={"/map"}>
+                    <ListItemText primary={"Map"}/>
+                </ListItem>
+                <ListItem button component={Link} to={"/about"}>
+                    <ListItemText primary={"About"}/>
+                </ListItem>
+                <ListItem button component={Link} to={"/faq"}>
+                    <ListItemText primary={"FAQ"}/>
+                </ListItem>
+                <ListItem button component={Link} to={"/rules"}>
+                    <ListItemText primary={"Rules"}/>
+                </ListItem>
+                <ListItem button component={Link} to={"/privacy"}>
+                    <ListItemText primary={"Privacy Policy"}/>
                 </ListItem>
             </List>
             <Divider/>
             <List>
-                <ListItem button>
-                    <ListItemIcon></ListItemIcon>
-                    <ListItemText primary={"Modpack"}/>
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon></ListItemIcon>
-                    <ListItemText primary={"Map"}/>
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon></ListItemIcon>
-                    <ListItemText primary={"About"}/>
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon></ListItemIcon>
-                    <ListItemText primary={"FAQ"}/>
-                </ListItem>
+                <ListSubheader componenet={"div"}>
+                    Links
+                </ListSubheader>
+                <ListItemLink button href="https://twitter.com/ArdaCraft_/" target={"_blank"}>
+                    <ListItemText primary={"Twitter"}/>
+                </ListItemLink>
+                <ListItemLink href="https://instagram.com/ardacraft/" target={"_blank"}>
+                    <ListItemText primary={"Instagram"}/>
+                </ListItemLink>
+                <ListItemLink href="https://youtube.com/c/ardacraftmc/" target={"_blank"}>
+                    <ListItemText primary={"Youtube"}/>
+                </ListItemLink>
+                <ListItemLink href="https://reddit.com/r/ardacraft/" target={"_blank"}>
+                    <ListItemText primary={"Reddit"}/>
+                </ListItemLink>
+                <ListItemLink href="https://planetminecraft.com/server/ardacraft-3119330/" target={"_blank"}>
+                    <ListItemText primary={"Planet Minecraft"}/>
+                </ListItemLink>
+                <ListItemLink href="https://github.com/ardacraft/" target={"_blank"}>
+                    <ListItemText primary={"GitHub"}/>
+                </ListItemLink>
+                <ListItemLink href="https://patreon.com/ardacraft/" target={"_blank"}>
+                    <ListItemText primary={"Patreon"}/>
+                </ListItemLink>
             </List>
         </div>
     );
