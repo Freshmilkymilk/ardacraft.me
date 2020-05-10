@@ -83,87 +83,87 @@ export default function Modpack() {
                         How to use the launcher:
                     </Typography>
                     <Typography component="body1" variant="body1" color="textSecondary">
-                                <ol>
+                        <ol>
+                            <li>
+                                Run your downloaded launcher. <strong>You may get a message that says this is
+                                not a
+                                trusted
+                                program. Run it anyway.</strong>
+                                <ul>
                                     <li>
-                                        Run your downloaded launcher. <strong>You may get a message that says this is
-                                        not a
-                                        trusted
-                                        program. Run it anyway.</strong>
-                                        <ul>
-                                            <li>
-                                                Note that the ArdaCraft Launcher will default install to a folder
-                                                called <code>ArdaCraft
-                                                Launcher</code> in
-                                                your <code>C:\Users\%yourusername\Documents</code> folder.
-                                            </li>
-                                        </ul>
+                                        Note that the ArdaCraft Launcher will default install to a folder
+                                        called <code>ArdaCraft
+                                        Launcher</code> in
+                                        your <code>C:\Users\%yourusername\Documents</code> folder.
                                     </li>
-                                    <li>
-                                        Once it is installed, select the Modpack which you prefer. The <code>ArdaCraft
-                                        Modpack
-                                        1.12.2</code> pack is the preferred version as highlighted below. The Conquest
-                                        Reforged
-                                        versions
-                                        do not include the ArdaCraft <a
-                                        href="https://github.com/ArdaCraft/AC_Overlay/releases/latest">Resourcepack</a>,
-                                        so if
-                                        you
-                                        plan
-                                        on joining the ArdaCraft server be sure to pick one of the ArdaCraft Modpack's.
-                                    </li>
-                                </ol>
-                                <Container>
-                                    <Grid container xl>
-                                        <Grid item>
+                                </ul>
+                            </li>
+                            <li>
+                                Once it is installed, select the Modpack which you prefer. The <code>ArdaCraft
+                                Modpack
+                                1.12.2</code> pack is the preferred version as highlighted below. The Conquest
+                                Reforged
+                                versions
+                                do not include the ArdaCraft <a
+                                href="https://github.com/ArdaCraft/AC_Overlay/releases/latest">Resourcepack</a>,
+                                so if
+                                you
+                                plan
+                                on joining the ArdaCraft server be sure to pick one of the ArdaCraft Modpack's.
+                            </li>
+                        </ol>
+                        <Container>
+                            <Grid container xl>
+                                <Grid item>
                                     <img src="https://i.imgur.com/uTo872D.jpg" alt="alt text"/>
-                                        </Grid>
-                                    </Grid>
-                                </Container>
-                                <ol start="3">
-                                    <li>
-                                        Log in with your Minecraft account. This process uses the Mojang authentication
-                                        service
-                                        and
-                                        we
-                                        do not see any of your information.
-                                    </li>
-                                    <li>
-                                        You will be given a screen showing optional mods that are in the pack. None of
-                                        these
-                                        mods
-                                        are
-                                        required to join the server and you may install mods as you wish.
-                                    </li>
-                                </ol>
-                                <Container>
-                                    <Grid container xl>
-                                        <Grid item>
+                                </Grid>
+                            </Grid>
+                        </Container>
+                        <ol start="3">
+                            <li>
+                                Log in with your Minecraft account. This process uses the Mojang authentication
+                                service
+                                and
+                                we
+                                do not see any of your information.
+                            </li>
+                            <li>
+                                You will be given a screen showing optional mods that are in the pack. None of
+                                these
+                                mods
+                                are
+                                required to join the server and you may install mods as you wish.
+                            </li>
+                        </ol>
+                        <Container>
+                            <Grid container xl>
+                                <Grid item>
                                     <img src="https://i.imgur.com/11QE6mh.png" alt="alt text"/>
-                                        </Grid>
-                                    </Grid>
-                                </Container>
-                                <ol start="5">
-                                    <li>
-                                        The launcher may take several minutes to download all the needed files depending
-                                        on your
-                                        connection.
-                                    </li>
-                                    <li>
-                                        Once everything is installed Minecraft will start. <strong>Your game may freeze
-                                        on
-                                        startup
-                                        and
-                                        you may have a (not responding) message, this is normal just let it
-                                        load.</strong>
-                                    </li>
-                                    <li>
-                                        You now have everything you need to join the server. The IP
-                                        is <code>mc.ardacraft.me</code> and
-                                        you can view other conquest servers with the arrow on the right hand side of the
-                                        Multiplayer
-                                        page.
-                                    </li>
-                                </ol>
+                                </Grid>
+                            </Grid>
+                        </Container>
+                        <ol start="5">
+                            <li>
+                                The launcher may take several minutes to download all the needed files depending
+                                on your
+                                connection.
+                            </li>
+                            <li>
+                                Once everything is installed Minecraft will start. <strong>Your game may freeze
+                                on
+                                startup
+                                and
+                                you may have a (not responding) message, this is normal just let it
+                                load.</strong>
+                            </li>
+                            <li>
+                                You now have everything you need to join the server. The IP
+                                is <code>mc.ardacraft.me</code> and
+                                you can view other conquest servers with the arrow on the right hand side of the
+                                Multiplayer
+                                page.
+                            </li>
+                        </ol>
                     </Typography>
                 </Container>
             </div>
@@ -235,9 +235,9 @@ export default function Modpack() {
                             </li>
                         </ol>
                         <Container>
-                            <Grid container xl justify="center">
+                            <Grid container xl>
                                 <Grid item>
-                            <img src="https://i.imgur.com/fO8umXF.png" alt="alt text"/>
+                                    <img src="https://i.imgur.com/fO8umXF.png" alt="alt text"/>
                                 </Grid>
                             </Grid>
                         </Container>
