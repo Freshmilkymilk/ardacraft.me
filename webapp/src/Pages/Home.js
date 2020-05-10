@@ -6,7 +6,6 @@ import Button from "@material-ui/core/Button";
 import {Link} from "react-router-dom";
 
 import '../App.css';
-import Grid from "@material-ui/core/Grid";
 
 export default function Home() {
 
@@ -46,19 +45,17 @@ export function Images() {
 export function Text() {
     return (
         <div>
-            <Grid item xs={12}>
-                <Typography variant={"h4"} align={"center"} color={"textPrimary"}>
-                    Founded in 2014,
-                </Typography>
-                <Typography variant={"subtitle1"} align={"center"} color={"textPrimary"}>
-                    ArdaCraft seeks to recreate J.R.R. Tolkien's Middle-earth in Minecraft
-                </Typography>
-                <div className={"home-button"}>
-                    <Button variant="contained" size="medium" component={Link} to={"/modpack"}>
-                        Join now!
-                    </Button>
-                </div>
-            </Grid>
+            <Typography variant={"h4"} align={"center"} color={"textPrimary"}>
+                Founded in 2014,
+            </Typography>
+            <Typography variant={"subtitle1"} align={"center"} color={"textPrimary"}>
+                ArdaCraft seeks to recreate J.R.R. Tolkien's Middle-earth in Minecraft
+            </Typography>
+            <div className={"home-button"}>
+                <Button variant="contained" size="medium" component={Link} to={"/modpack"}>
+                    Join now!
+                </Button>
+            </div>
         </div>
     );
 

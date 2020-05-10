@@ -60,17 +60,17 @@ export function Footer() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://forums.ardacraft.me" variant="subtitle1" color="textSecondary">
+                            <Link href="https://forums.ardacraft.me" variant="subtitle1" color="textSecondary" rel={"noopener"}>
                                 Forums
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://wiki.ardacraft.me" variant="subtitle1" color="textSecondary">
+                            <Link href="https://wiki.ardacraft.me" variant="subtitle1" color="textSecondary" rel={"noopener"}>
                                 Wiki
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://discord.gg/fykFabG" variant="subtitle1" color="textSecondary">
+                            <Link href="https://discord.gg/fykFabG" variant="subtitle1" color="textSecondary" rel={"noopener"}>
                                 Discord
                             </Link>
                         </li>
@@ -110,43 +110,43 @@ export function Footer() {
                     <ul>
                         <li>
                             <Link href="https://twitter.com/ArdaCraft_/" target="_blank" variant="subtitle1"
-                                  color="textSecondary">
+                                  color="textSecondary" rel={"noopener"}>
                                 Twitter
                             </Link>
                         </li>
                         <li>
                             <Link href="https://instagram.com/ardacraft/" target="_blank" variant="subtitle1"
-                                  color="textSecondary">
+                                  color="textSecondary" rel={"noopener"}>
                                 Instagram
                             </Link>
                         </li>
                         <li>
                             <Link href="https://youtube.com/c/ardacraftmc/" target="_blank" variant="subtitle1"
-                                  color="textSecondary">
+                                  color="textSecondary" rel={"noopener"}>
                                 YouTube
                             </Link>
                         </li>
                         <li>
                             <Link href="https://reddit.com/r/ardacraft/" target="_blank" variant="subtitle1"
-                                  color="textSecondary">
+                                  color="textSecondary" rel={"noopener"}>
                                 Reddit
                             </Link>
                         </li>
                         <li>
                             <Link href="https://planetminecraft.com/server/ardacraft-3119330/" target="_blank"
-                                  variant="subtitle1" color="textSecondary">
+                                  variant="subtitle1" color="textSecondary" rel={"noopener"}>
                                 Planet Minecraft
                             </Link>
                         </li>
                         <li>
                             <Link href="https://github.com/ardacraft/" target="_blank" variant="subtitle1"
-                                  color="textSecondary">
+                                  color="textSecondary" rel={"noopener"}>
                                 GitHub
                             </Link>
                         </li>
                         <li>
                             <Link href="https://patreon.com/ardacraft/" target="_blank" variant="subtitle1"
-                                  color="textSecondary">
+                                  color="textSecondary" rel={"noopener"}>
                                 Patreon
                             </Link>
                         </li>

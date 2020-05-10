@@ -151,13 +151,13 @@ export function SideDrawer() {
                 <ListItem button component={Link} to={"/"}>
                     <ListItemText primary={"Home"}/>
                 </ListItem>
-                <ListItemLink href="https://forums.ardacraft.me/">
+                <ListItemLink href="https://forums.ardacraft.me/" rel={"noopener"}>
                     <ListItemText primary={"Forums"}/>
                 </ListItemLink>
-                <ListItemLink href="https://wiki.ardacraft.me/">
+                <ListItemLink href="https://wiki.ardacraft.me/" rel={"noopener"}>
                     <ListItemText primary={"Wiki"}/>
                 </ListItemLink>
-                <ListItemLink href="https://discord.gg/fykFabG" target={"_blank"}>
+                <ListItemLink href="https://discord.gg/fykFabG" target={"_blank"} rel={"noopener"}>
                     <ListItemText primary={"Discord"}/>
                 </ListItemLink>
             </List>
@@ -190,25 +190,25 @@ export function SideDrawer() {
                 <ListSubheader componenet={"div"}>
                     Links
                 </ListSubheader>
-                <ListItemLink button href="https://twitter.com/ArdaCraft_/" target={"_blank"}>
+                <ListItemLink button href="https://twitter.com/ArdaCraft_/" target={"_blank"} rel={"noopener"}>
                     <ListItemText primary={"Twitter"}/>
                 </ListItemLink>
-                <ListItemLink href="https://instagram.com/ardacraft/" target={"_blank"}>
+                <ListItemLink href="https://instagram.com/ardacraft/" target={"_blank"} rel={"noopener"}>
                     <ListItemText primary={"Instagram"}/>
                 </ListItemLink>
-                <ListItemLink href="https://youtube.com/c/ardacraftmc/" target={"_blank"}>
+                <ListItemLink href="https://youtube.com/c/ardacraftmc/" target={"_blank"} rel={"noopener"}>
                     <ListItemText primary={"Youtube"}/>
                 </ListItemLink>
-                <ListItemLink href="https://reddit.com/r/ardacraft/" target={"_blank"}>
+                <ListItemLink href="https://reddit.com/r/ardacraft/" target={"_blank"} rel={"noopener"}>
                     <ListItemText primary={"Reddit"}/>
                 </ListItemLink>
-                <ListItemLink href="https://planetminecraft.com/server/ardacraft-3119330/" target={"_blank"}>
+                <ListItemLink href="https://planetminecraft.com/server/ardacraft-3119330/" target={"_blank"} rel={"noopener"}>
                     <ListItemText primary={"Planet Minecraft"}/>
                 </ListItemLink>
-                <ListItemLink href="https://github.com/ardacraft/" target={"_blank"}>
+                <ListItemLink href="https://github.com/ardacraft/" target={"_blank"} rel={"noopener"}>
                     <ListItemText primary={"GitHub"}/>
                 </ListItemLink>
-                <ListItemLink href="https://patreon.com/ardacraft/" target={"_blank"}>
+                <ListItemLink href="https://patreon.com/ardacraft/" target={"_blank"} rel={"noopener"}>
                     <ListItemText primary={"Patreon"}/>
                 </ListItemLink>
             </List>
