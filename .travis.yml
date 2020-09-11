@@ -9,6 +9,6 @@ install:
   - npm install --prefix webapp
   
 script:
-  - npm test --prefix webapp
-  - npm run test:coverage --prefix webapp
+  - npm test --prefix webapp --passWithNoTests
+  - npm run test:coverage --prefix webapp --passWithNoTests
   - npm run build --prefix webapp
