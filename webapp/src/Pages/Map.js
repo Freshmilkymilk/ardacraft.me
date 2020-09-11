@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Iframe from 'react-iframe';
 
 import '../App.css';
 import Button from "@material-ui/core/Button";
@@ -10,7 +11,7 @@ export default class Map extends Component {
             <div>
                 <div className="map">
                     <div className="map-container">
-                        <iframe src="https://ardacraft.io/map"></iframe>
+                        <Iframe url="https://ardacraft.io/map" title="ArdaCraft Dynmap" frameBorder="0"/>
                     </div>
                 </div>
                 <div className="map-button">

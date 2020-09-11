@@ -9,8 +9,9 @@
     "clsx": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-iframe": "^1.8.0",
     "react-router-dom": "latest",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^3.4.3"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "~4.2.4",

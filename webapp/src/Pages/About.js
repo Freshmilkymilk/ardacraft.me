@@ -1,4 +1,5 @@
 import React from "react";
+import Iframe from 'react-iframe';
 
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Container from "@material-ui/core/Container";
@@ -65,7 +66,10 @@ export default function About() {
                 <Container maxWidth={"lg"}>
                     <Grid container spacing={1} className={classes.root}>
                         <Grid item sm={6} className={classes.paper}>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Hjl-eEwZUP8"
+                            <Iframe title="Shire Video"
+                                    width="560"
+                                    height="315"
+                                    url="https://www.youtube.com/embed/Hjl-eEwZUP8"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen/>
