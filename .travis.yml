@@ -3,8 +3,12 @@ node_js:
   - "stable"
 cache:
   directories:
-  - node_modules
+  - webapp/node_modules
+  
+install:
+  - npm install --prefix webapp
+  
 script:
-  - npm test
-  - npm run test:coverage
-  - npm run build
+  - npm test --prefix webapp
+  - npm run test:coverage --prefix webapp
+  - npm run build --prefix webapp
