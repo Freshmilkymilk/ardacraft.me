@@ -1,4 +1,4 @@
-# ardacraft.me
+# ardacraft.me [![Actions Status](https://github.com/Freshmilkymilk/ardacraft.me/workflows/Node.js%20CI/badge.svg)](https://github.com/Freshmilkymilk/ardacraft.me/actions)
 
 ## Environment setup
 
